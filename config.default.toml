@@ -1,0 +1,24 @@
+rpcurl = "https://rpc1.newchain.newtonproject.org/"
+
+LogLevel = "info"
+DelayBlock = 3 # for transfer and monitor
+#EnableTracer = true # enable tracer to trace transaction
+#TracerTimeout = "5s" # the timeout to trace transaction, default: 5s
+#TracerReexec = 128 # the number of blocks to be reexecuted, default: 128,
+
+[Subscribe]
+    Server = "tcp://127.0.0.1:6883"
+    Username = "newchain_mqtt_sub"
+    Password = "password"
+    #ClientID = "notify" # Default "guard"
+    #Topic = "RawTransaction" # Default "RawTransaction"
+    #QoS = 1
+
+[Publish]
+    Server = "tcp://127.0.0.1:6883"
+    Username = "newchain_mqtt_pub"
+    Password = "password"
+    PrefixTopic = "newchain/" # only for 0_address topic
+    #ClientID = "notify" # Default "guard"
+    #Topic = "Pending" # Default "Pending"
+    #QoS = 1

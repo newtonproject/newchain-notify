@@ -1,0 +1,10 @@
+wallet/*
+debug.test
+debug
+.idea/*
+.vscode/*
+newchain-notify
+newchain-notify.exe
+config.toml
+error.log
+/.BlockHeight
