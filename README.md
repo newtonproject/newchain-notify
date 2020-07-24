@@ -146,4 +146,7 @@ newchain-notify monitor
 ```
 
 * Tips:
-    * You need to specify different IDs with `--id` when there are multiple programs are running at the same time. 
+    * You need to specify different IDs with `--id` when there are multiple programs are running at the same time.
+    * The server needs to be configured with MQTT service,
+    please refer to [MQTT](http://mqtt.org/) or use [AWS MQ](https://aws.amazon.com/amazon-mq)
+ 
